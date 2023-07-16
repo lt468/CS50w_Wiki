@@ -11,7 +11,7 @@
     <body>
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
-                <h2 class="display-4">Wiki</h2>
+                <h2 class="display-4"><a id="main_heading" href="{% url 'wiki:index' %}">Wiki</a></h2>
                 <form action="{% url 'wiki:search' %}">
                     <input class="form-control" type="text" name="q" placeholder="Search Encyclopedia">
                 </form>

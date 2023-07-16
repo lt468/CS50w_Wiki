@@ -1,8 +1,9 @@
 # CS50w Project 1 | Wiki
 
-## wikipedia clone
+## budget wikipedia
 
-This is my submission to CS50w's Project 0: Search. 
+This is my submission to CS50w's Project 1: Wiki. 
+[![Project Demo Video](https://img.youtube.com/vi/AJqe_klvOTA/0.jpg)](https://youtu.be/AJqe_klvOTA)
 
 For information about the course, check out the [official course page](https://cs50.harvard.edu/web/2020/).
 
