@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia - Error
+{% endblock %}
+
+{% block body %}
+    <div style="text-align: center;">
+        <h1> Error: Page already created!</h1>
+        <img style="max-width:256px; max-height:256px; width: auto; height: auto;" src="https://media.tenor.com/0WyPJvp2ZwMAAAAd/cat-cats.gif" alt="Cat shocked gif">
+        <br>
+        <div style="margin: 50px;">
+            <a href="{% url 'wiki:content' title %}">
+                <button type="button" class="btn btn-info">View Page</button>
+            </a>
+            <a href="{% url 'wiki:index' %}">
+                <button type="button" class="btn btn-dark">Home</button>
+            </a>
+        </div>
+    </div> 
+
+{% endblock %}

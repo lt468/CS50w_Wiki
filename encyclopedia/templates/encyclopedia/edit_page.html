@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia - Editing {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1>Editing {{ title }}</h1>
+    <div>
+        {{ contents | safe  }}
+    </div>
+    <form style="display: flex; flex-direction: column; width: 80%;" method="POST">
+        {% csrf_token %}
+        <!-- Adds a break so there is one field under the other -->
+        {{ form.text.label_tag }}
+        <br>
+        {{ form.text }}
+        <br>
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <input type="submit" class="btn btn-info" value="Save">
+
+            <a href="{% url 'wiki:content' title %}">
+                <button type="button" class="btn btn-dark">Cancel</button>
+            </a>
+        </div>
+    </form>
+{% endblock %}

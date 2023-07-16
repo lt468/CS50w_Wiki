@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>All Pages</h1>
+
+    <ul class="list-group">
+        {% for entry in entries %}
+            <!-- Needed to add the "entry" at the end to specifiy what content should take -->
+            <li class="list-group-item"><a href="{% url 'wiki:content' entry %}">{{ entry }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
